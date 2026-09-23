@@ -4,22 +4,9 @@
   "main": "src/index.ts",
   "compatibility_date": "2024-09-23",
   "compatibility_flags": ["nodejs_compat"],
-  "alias": {
-    "node:tty": "./shims/tty.js",
-    "tty": "./shims/tty.js",
-    "node:os": "./shims/os.js",
-    "os": "./shims/os.js",
-    "node:fs": "./shims/fs.js",
-    "fs": "./shims/fs.js",
-    "node:path": "./shims/path.js",
-    "path": "./shims/path.js"
-  },
   "assets": { "binding": "ASSETS", "directory": "./public" },
-  "durable_objects": {
-    "bindings": [{ "name": "AgentDO", "class_name": "AgentDO" }]
-  },
+  "durable_objects": { "bindings": [{ "name": "AgentDO", "class_name": "AgentDO" }] },
   "migrations": [{ "tag": "v1", "new_sqlite_classes": ["AgentDO"] }],
   "browsers": { "bindings": [{ "name": "BROWSER" }] },
-  "vars": { "APP_NAME": "TRAE.....LER WORKSPACE" },
   "observability": { "enabled": true }
 }
